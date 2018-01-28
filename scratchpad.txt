@@ -1,0 +1,8 @@
+Facebook:
+APP ID: 339714333198835
+APP SECRET: c122626fb82ae57dc1817eca5d8be4ef
+
+BrainTree:
+Merchant ID: z7tgr7pm2p4rmksd
+Public Key: 53zs9vfppp3bd7ks
+Private Key: 15a6335498b2671a2e84f3ff3ca01854

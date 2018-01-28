@@ -1,0 +1,6 @@
+django
+gunicorn
+social-auth-app-django
+whitenoise
+psycopg2
+dj-database-url

@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/2.0/ref/settings/
 """
 
 import os
+import dj_database_url
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -37,6 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+	'sixxerapp',
+	'social_django',
+	'whitenoise',
 ]
 
 MIDDLEWARE = [
@@ -63,6 +67,8 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+				'social.apps.django_app.context_processors.backends',
+				'social_django.context_processors.login_redirect',
             ],
         },
     },
@@ -119,3 +125,17 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, "static")
+
+AUTHENTICATION_BACKENDS = [
+	"social_core.backends.facebook.FacebookOAuth2",
+	'django.contrib.auth.backends.ModelBackend',
+]
+
+LOGIN_REDIRECT_URL = "/"
+
+SOCIAL_AUTH_FACEBOOK_KEY = "339714333198835"
+SOCIAL_AUTH_FACEBOOK_SECRET = "c122626fb82ae57dc1817eca5d8be4ef"
+
+db_from_env = dj_database_url.config(conn_max_age=500)
+DATABASES["default"].update(db_from_env)

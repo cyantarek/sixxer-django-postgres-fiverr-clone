@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Sixxer App</title>
+        <link rel="icon" type="image/ico" href="{% static 'img/favicon.ico' %}">
+        <link rel="stylesheet" href="{% static 'css/bootstrap3.3.4.min.css' %}">
+        <link rel="stylesheet" href="{% static 'css/custom.css' %}">
+    </head>
+    <body>
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="navbar-inverse">
+                <div class="container">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="/"><img src="{% static 'img/logo.png' %}" alt="" height="23"></a>
+                    </div>
+                    <form action="#" class="navbar-form navbar-left" role="search">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Find services">
+                        </div>
+                    </form>
+                    <ul class="nav navbar-nav navbar-right">
+                        {% if user and not user.is_anonymous %}
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                   aria-haspopup="true"
+                                   aria-expanded="false">
+                                    {{ user.get_full_name|default:user.username }} <span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="{% url 'logout' %}?next={{ request.path }}">Logout</a></li>
+                                </ul>
+                            </li>
+                        {% else %}
+                            <li>
+                                <a href="{% url 'social:begin' 'facebook' %}?next={{ request.path }}">Login</a>
+                            </li>
+                        {% endif %}
+                    </ul>
+                </div>
+            </div>
+            <div id="category">
+                <div class="container">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#">Graphics & Design</a></li>
+                        <li><a href="#">Digital Marketing</a></li>
+                        <li><a href="#">SEO</a></li>
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">Programming & tech</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div id="body">
+            <div class="container">
+                {% block page %}
+
+                {% endblock %}
+            </div>
+        </div>
+
+        <footer id="footer">
+            <div class="container">
+                <span>Sixxer App &copy; 2018</span>
+            </div>
+        </footer>
+        <script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+        <script src="{% static 'js/bootstrap3.3.4.min.js' %}"></script>
+    </body>
+</html>

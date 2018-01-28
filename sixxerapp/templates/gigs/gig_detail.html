@@ -1,5 +1,65 @@
 {% extends 'modules/base.html' %}
+{% load static %}
 
 {% block page %}
-    <p>This is Gig Detail Page</p>
+
+    <div class="row">
+        <div class="col-md-8">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <h3>I will create your own website with Django and ReactJS</h3>
+                    <hr>
+                    <img src="{% static 'img/gig.png' %}" alt="" class="img-responsive center-block">
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4>About This Gig:</h4>
+                </div>
+                <div class="panel-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quisquam, voluptatibus!
+                       Aliquam architecto beatae commodi debitis, ducimus eius enim eveniet ipsum iste itaque
+                       laboriosam natus odio quis tempore tenetur voluptatibus?</p>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4>Review</h4>
+                </div>
+                <ul class="list-group">
+                    {% for i in '123' %}
+                        <li class="list-group-item">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <img src="{% static 'img/avatar.png' %}" alt="" class="img-circle center-block"
+                                         height="60" width="60">
+                                </div>
+                                <div class="col-md-10">
+                                    <h5>Cyan Tarek</h5>
+                                    <p>Great job.</p>
+                                </div>
+                            </div>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <button type="button" class="btn btn-success btn-block">Order Now ($6)</button>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <img src="{% static 'img/avatar.png' %}" alt="" class="img-circle center-block" height="100" width="100">
+                    <h4 class="text-center">Cyan Tarek</h4>
+                    <hr>
+                    <p>I have 1 years of experience in Python/Django, Javascript/jQuery</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 {% endblock %}

@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="227ec69a-56e4-4793-a43c-44092a3b835b" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/sixxerapp/static/img/avatar.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sixxerapp/static/img/banner.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sixxerapp/static/img/gig.png" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Sixxer/settings.py" afterPath="$PROJECT_DIR$/Sixxer/settings.py" />
+      <change beforePath="$PROJECT_DIR$/sixxerapp/static/css/custom.css" afterPath="$PROJECT_DIR$/sixxerapp/static/css/custom.css" />
+      <change beforePath="$PROJECT_DIR$/sixxerapp/templates/gigs/gig_detail.html" afterPath="$PROJECT_DIR$/sixxerapp/templates/gigs/gig_detail.html" />
+      <change beforePath="$PROJECT_DIR$/sixxerapp/templates/home.html" afterPath="$PROJECT_DIR$/sixxerapp/templates/home.html" />
       <change beforePath="$PROJECT_DIR$/sixxerapp/templates/modules/base.html" afterPath="$PROJECT_DIR$/sixxerapp/templates/modules/base.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,11 +29,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Sixxer/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="452">
-              <caret line="69" column="60" lean-forward="true" selection-start-line="69" selection-start-column="16" selection-end-line="69" selection-end-column="60" />
+            <state relative-caret-position="588">
+              <caret line="137" column="64" lean-forward="true" selection-start-line="137" selection-start-column="64" selection-end-line="137" selection-end-column="64" />
               <folding>
                 <element signature="e#305#314#0" expanded="true" />
               </folding>
@@ -49,9 +54,23 @@
       <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sixxerapp/templates/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="4" column="41" lean-forward="false" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
+            <state relative-caret-position="300">
+              <caret line="10" column="30" lean-forward="false" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="gig_detail.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sixxerapp/templates/gigs/gig_detail.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="540">
+              <caret line="57" column="87" lean-forward="false" selection-start-line="57" selection-start-column="87" selection-end-line="57" selection-end-column="87" />
+              <folding>
+                <element signature="e#101#1973#0#HTML" expanded="false" />
+                <element signature="e#136#463#0#HTML" expanded="false" />
+                <element signature="e#476#1010#0#HTML" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -90,23 +109,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sixxerapp/templates/modules/base.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="36" column="100" lean-forward="false" selection-start-line="36" selection-start-column="41" selection-end-line="36" selection-end-column="100" />
-              <folding>
-                <element signature="e#2889#2895#0#HTML" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="custom.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sixxerapp/static/css/custom.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="16" column="9" lean-forward="true" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+            <state relative-caret-position="330">
+              <caret line="14" column="25" lean-forward="false" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -153,18 +160,18 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/sixxerapp/views.py" />
         <option value="$PROJECT_DIR$/sixxerapp/urls.py" />
-        <option value="$PROJECT_DIR$/sixxerapp/templates/gigs/gig_detail.html" />
-        <option value="$PROJECT_DIR$/sixxerapp/templates/home.html" />
         <option value="$PROJECT_DIR$/scratchpad.txt" />
         <option value="$PROJECT_DIR$/Sixxer/auth.py" />
         <option value="$PROJECT_DIR$/Sixxer/urls.py" />
-        <option value="$PROJECT_DIR$/sixxerapp/static/css/custom.css" />
         <option value="$PROJECT_DIR$/Procfile" />
         <option value="$PROJECT_DIR$/Sixxer/wsgi.py" />
         <option value="$PROJECT_DIR$/runtime.txt" />
         <option value="$PROJECT_DIR$/requirements.txt" />
-        <option value="$PROJECT_DIR$/sixxerapp/templates/modules/base.html" />
         <option value="$PROJECT_DIR$/Sixxer/settings.py" />
+        <option value="$PROJECT_DIR$/sixxerapp/templates/modules/base.html" />
+        <option value="$PROJECT_DIR$/sixxerapp/static/css/custom.css" />
+        <option value="$PROJECT_DIR$/sixxerapp/templates/home.html" />
+        <option value="$PROJECT_DIR$/sixxerapp/templates/gigs/gig_detail.html" />
       </list>
     </option>
   </component>
@@ -261,7 +268,20 @@
               <item name="Sixxer" type="b2602c69:ProjectViewProjectNode" />
               <item name="Sixxer" type="462c0819:PsiDirectoryNode" />
               <item name="sixxerapp" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Sixxer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Sixxer" type="462c0819:PsiDirectoryNode" />
+              <item name="sixxerapp" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Sixxer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Sixxer" type="462c0819:PsiDirectoryNode" />
+              <item name="sixxerapp" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="gigs" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -279,8 +299,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\Development World\Development World Resources Backup 14-1-18\Projects\Full Stack\Sixxer\sixxerapp\static\js" />
       <recent name="E:\Development World\Development World Resources Backup 14-1-18\Projects\Full Stack\Sixxer\sixxerapp\static\img" />
+      <recent name="E:\Development World\Development World Resources Backup 14-1-18\Projects\Full Stack\Sixxer\sixxerapp\static\js" />
       <recent name="E:\Development World\Development World Resources Backup 14-1-18\Projects\Full Stack\Sixxer\sixxerapp\static\fonts" />
       <recent name="E:\Development World\Development World Resources Backup 14-1-18\Projects\Full Stack\Sixxer\sixxerapp\static\css" />
     </key>
@@ -344,10 +364,10 @@
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29392973" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25019732" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25019732" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22075911" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26124704" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26124704" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12599364" sideWeight="0.4972889" order="0" side_tool="false" content_ui="combo" x="1127" y="59" width="305" height="1291" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13553259" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -382,14 +402,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="5" column="11" lean-forward="false" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sixxerapp/templates/gigs/gig_detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="4" column="14" lean-forward="true" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
           <folding />
         </state>
       </provider>
@@ -443,16 +455,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Sixxer/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="22" column="55" lean-forward="true" selection-start-line="22" selection-start-column="55" selection-end-line="22" selection-end-column="55" />
-          <folding>
-            <element signature="e#630#662#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sixxerapp/static/css/bootstrap3.3.4.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -473,14 +475,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sixxerapp/static/css/custom.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="16" column="9" lean-forward="true" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
           <folding />
         </state>
       </provider>
@@ -527,30 +521,60 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sixxerapp/templates/home.html">
+    <entry file="file://$PROJECT_DIR$/Sixxer/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="4" column="41" lean-forward="false" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
-          <folding />
+        <state relative-caret-position="588">
+          <caret line="137" column="64" lean-forward="true" selection-start-line="137" selection-start-column="64" selection-end-line="137" selection-end-column="64" />
+          <folding>
+            <element signature="e#305#314#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sixxerapp/templates/modules/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="36" column="100" lean-forward="false" selection-start-line="36" selection-start-column="41" selection-end-line="36" selection-end-column="100" />
+        <state relative-caret-position="228">
+          <caret line="28" column="124" lean-forward="false" selection-start-line="28" selection-start-column="124" selection-end-line="28" selection-end-column="124" />
           <folding>
-            <element signature="e#2889#2895#0#HTML" expanded="true" />
+            <element signature="e#3016#3022#0#HTML" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Sixxer/settings.py">
+    <entry file="file://$PROJECT_DIR$/Sixxer/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="452">
-          <caret line="69" column="60" lean-forward="true" selection-start-line="69" selection-start-column="16" selection-end-line="69" selection-end-column="60" />
+        <state relative-caret-position="660">
+          <caret line="22" column="55" lean-forward="true" selection-start-line="22" selection-start-column="55" selection-end-line="22" selection-end-column="55" />
           <folding>
-            <element signature="e#305#314#0" expanded="true" />
+            <element signature="e#630#662#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sixxerapp/static/css/custom.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="14" column="25" lean-forward="false" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sixxerapp/templates/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="10" column="30" lean-forward="false" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sixxerapp/templates/gigs/gig_detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="57" column="87" lean-forward="false" selection-start-line="57" selection-start-column="87" selection-end-line="57" selection-end-column="87" />
+          <folding>
+            <element signature="e#101#1973#0#HTML" expanded="false" />
+            <element signature="e#136#463#0#HTML" expanded="false" />
+            <element signature="e#476#1010#0#HTML" expanded="false" />
           </folding>
         </state>
       </provider>

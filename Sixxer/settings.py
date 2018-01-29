@@ -140,8 +140,8 @@ LOGIN_REDIRECT_URL = "/"
 SOCIAL_AUTH_FACEBOOK_KEY = "339714333198835"
 SOCIAL_AUTH_FACEBOOK_SECRET = "c122626fb82ae57dc1817eca5d8be4ef"
 
-db_from_env = dj_database_url.config(conn_max_age=500)
-DATABASES["default"].update(db_from_env)
+# db_from_env = dj_database_url.config(conn_max_age=500)
+# DATABASES["default"].update(db_from_env)
 
 
 SOCIAL_AUTH_PIPELINE = (

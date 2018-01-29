@@ -7,9 +7,9 @@
         <div class="col-md-8">
             <div class="panel panel-default">
                 <div class="panel-body">
-                    <h3>I will create your own website with Django and ReactJS</h3>
+                    <h3>{{ gig.title }}</h3>
                     <hr>
-                    <img src="{% static 'img/gig.png' %}" alt="" class="img-responsive center-block">
+                    <img src="/media/{{ gig.photo }}" alt="" class="img-responsive center-block">
                 </div>
             </div>
             <div class="panel panel-default">
@@ -17,9 +17,7 @@
                     <h4>About This Gig:</h4>
                 </div>
                 <div class="panel-body">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quisquam, voluptatibus!
-                       Aliquam architecto beatae commodi debitis, ducimus eius enim eveniet ipsum iste itaque
-                       laboriosam natus odio quis tempore tenetur voluptatibus?</p>
+                    <p>{{ gig.description }}</p>
                 </div>
             </div>
             <div class="panel panel-default">
@@ -27,35 +25,70 @@
                     <h4>Review</h4>
                 </div>
                 <ul class="list-group">
-                    {% for i in '123' %}
+                    {% if user.is_authenticated %}
+                        {% ifnotequal gig.user user %}
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <p>Be the first to review this gig!</p>
+                                    </div>
+                                </div>
+                            </li>
+                        {% else %}
+                            {% for i in '123' %}
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <img src="{% static 'img/avatar.png' %}" alt=""
+                                                 class="img-circle center-block"
+                                                 height="60" width="60">
+                                        </div>
+                                        <div class="col-md-10">
+                                            <h5>David T. Pain</h5>
+                                            <p>Great job.</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            {% endfor %}
+                        {% endifnotequal %}
+                    {% else %}
                         <li class="list-group-item">
                             <div class="row">
-                                <div class="col-md-2">
-                                    <img src="{% static 'img/avatar.png' %}" alt="" class="img-circle center-block"
-                                         height="60" width="60">
-                                </div>
-                                <div class="col-md-10">
-                                    <h5>Cyan Tarek</h5>
-                                    <p>Great job.</p>
+                                <div class="col-md-12">
+                                    <p>No review for this gig!</p>
                                 </div>
                             </div>
                         </li>
-                    {% endfor %}
+                    {% endif %}
                 </ul>
             </div>
         </div>
         <div class="col-md-4">
             <div class="panel panel-default">
                 <div class="panel-body">
-                    <button type="button" class="btn btn-success btn-block">Order Now ($6)</button>
+                    {% ifequal gig.user user %}<a href="{% url 'sixxer:gig-edit' gig.id %}">
+                        <button type="button" class="btn btn-primary btn-block">
+                            Edit Gig
+                        </button>
+                    </a>
+                    {% else %}
+                        <button type="button" class="btn btn-success btn-block" href="#">
+                            Order Now (${{ gig.price }})
+                        </button>
+                    {% endifequal %}
+
                 </div>
             </div>
             <div class="panel panel-default">
-                <div class="panel-body">
-                    <img src="{% static 'img/avatar.png' %}" alt="" class="img-circle center-block" height="100" width="100">
-                    <h4 class="text-center">Cyan Tarek</h4>
+                <div class="panel-body"><a href="{% url 'sixxer:my-profile' gig.user.username %}"><img
+                        src="{% if gig.user.profile %} {{ gig.user.profile.avatar }} {% else %} {% static 'img/avatar.png' %} {% endif %}"
+                        alt="" class="img-circle center-block" height="100" width="100"></a>
+                    <h4 class="text-center"><a
+                            href="{% url 'sixxer:my-profile' gig.user.username %}">{{ gig.user.username }}</a></h4>
                     <hr>
-                    <p>I have 1 years of experience in Python/Django, Javascript/jQuery</p>
+                    <p>{% if gig.user.profile.about %} {{ gig.user.profile.about }} {% else %}No description found for
+                                                                                              this
+                                                                                              seller!{% endif %}</p>
                 </div>
             </div>
         </div>

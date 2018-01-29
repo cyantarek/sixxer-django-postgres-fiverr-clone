@@ -26,16 +26,20 @@
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
                                    aria-haspopup="true"
                                    aria-expanded="false">
-                                    <img src="{% static 'img/avatar.png' %}" alt="" class="img-circle" height="22" width="22">
+                                    <img src="{% if user.profile %} {{ user.profile.avatar }} {% else %} {% static 'img/avatar.png' %} {% endif %}" alt="" class="img-circle" height="22" width="22">
                                     {{ user.get_full_name|default:user.username }} <span class="caret"></span>
                                 </a>
                                 <ul class="dropdown-menu">
+{#                                    <li><a href="{% url 'sixxer:my-profile' user.username %}">My Account</a></li>#}
+                                    <li><a href="{% url 'sixxer:gig-create' %}">Create a Gig</a></li>
+                                    <li><a href="{% url 'sixxer:my-gigs' %}">My Gigs</a></li>
+                                    <li role="separator"></li>
                                     <li><a href="{% url 'logout' %}?next={{ request.path }}">Logout</a></li>
                                 </ul>
                             </li>
                         {% else %}
                             <li>
-                                <a href="{% url 'social:begin' 'facebook' %}?next={{ request.path }}">Login</a>
+                                <a href="{% url 'social:begin' 'facebook' %}?next={{ request.path }}">Login with Facebook</a>
                             </li>
                         {% endif %}
                     </ul>
@@ -46,9 +50,9 @@
                     <ul class="nav navbar-nav">
                         <li><a href="#">Graphics & Design</a></li>
                         <li><a href="#">Digital Marketing</a></li>
-                        <li><a href="#">SEO</a></li>
+                        <li><a href="#">Video & Animation</a></li>
                         <li><a href="#">Web Development</a></li>
-                        <li><a href="#">Programming & tech</a></li>
+                        <li><a href="#">Programming & Tech</a></li>
                     </ul>
                 </div>
             </div>

@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth.decorators import login_required
+from django.utils.datastructures import MultiValueDictKeyError
 from django.utils.text import slugify
 
 from .models import Gig, Profile, Purchase, Review
@@ -21,16 +22,16 @@ category = {
 	}
 
 def home(request):
-	try:
-		if request.GET["c"]:
-			gigs = Gig.objects.filter(category=category[request.GET["c"]])
-		elif request.GET["s"]:
-			gigs = Gig.objects.filter(title__contains=request.GET["s"])
-		else:
-			gigs = Gig.objects.filter(status=True).order_by("-rating")
-	except:
-		gigs = Gig.objects.filter(status=True).order_by("-rating")
+	gigs = Gig.objects.filter(status=True).order_by("-rating")
 
+	return render(request, "home.html", {"gigs": gigs})
+
+def search(request):
+	gigs = Gig.objects.filter(title__contains=request.GET["s"])
+	return render(request, "home.html", {"gigs": gigs})
+
+def categories(request):
+	gigs = Gig.objects.filter(category__exact=category[request.GET["c"]])
 	return render(request, "home.html", {"gigs": gigs})
 
 def gig_detail(request, slug):

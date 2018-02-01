@@ -14,4 +14,6 @@ urlpatterns = [
     path("profile/<str:username>", views.my_profile, name="my-profile"),
     path("purchase/", views.create_purchase, name="create-purchase"),
     path("add_review/", views.add_review, name="add-review"),
+    path("search/", views.search, name="search"),
+    path("category/", views.categories, name="category"),
 ]

@@ -156,3 +156,8 @@ SOCIAL_AUTH_PIPELINE = (
     'social_core.pipeline.social_auth.load_extra_data',
     'social_core.pipeline.user.user_details',
 )
+
+BRAINTREE_PRODUCTION = False
+BRAINTREE_MERCHANT_ID = "z7tgr7pm2p4rmksd"
+BRAINTREE_PUBLIC_KEY = "53zs9vfppp3bd7ks"
+BRAINTREE_PRIVATE_KEY = "15a6335498b2671a2e84f3ff3ca01854"

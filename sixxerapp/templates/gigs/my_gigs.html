@@ -22,7 +22,9 @@
                         <td><a href="{% url 'sixxer:gig-detail' gig.id %}">{{ gig.title }}</a></td>
                         <td>${{ gig.price }}</td>
                         <td>0</td>
-                        {% if gig.status %}<td class="green">Active{% else %}<td class="text-danger">Disabled{% endif %}</td>
+                        {% if gig.status %}
+                            <td class="green">Active{% else %}
+                            <td class="text-danger">Disabled{% endif %}</td>
                     </tr>
                 {% endfor %}
             </tbody>

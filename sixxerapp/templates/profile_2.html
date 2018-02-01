@@ -1,0 +1,77 @@
+{% extends 'modules/base.html' %}
+{% load static %}
+
+{% block page %}
+
+    <div class="row" style="margin-top: 15px">
+        <div class="col-md-4">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <div class="panel-body"><a href="{% url 'sixxer:my-profile' profile.user.username %}"><img
+                            src="{% if profile.user.profile %} {{ profile.user.profile.avatar }} {% else %} {% static 'img/avatar.png' %} {% endif %}"
+                            alt="" class="img-circle center-block" height="100" width="100"></a>
+                        <h4 class="text-center"><a
+                                href="{% url 'sixxer:my-profile' profile.user.username %}">{{ profile.user.username }}</a>
+                        </h4>
+                        <small><p class="text-center">{{ profile.slogan }}</p></small>
+                        <span class="fa fa-star-o" data-rating="3"></span>
+                        <button type="button" class="btn btn-success center-block" href="#">
+                            Contact Me
+                        </button>
+                        <hr>
+                        <p>{% if profile.about %} {{ profile.about }} {% else %}No description found
+                                                                                for
+                                                                                this
+                                                                                seller!{% endif %}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <strong>Description</strong>
+                    <hr>
+                    <strong>Languages</strong>
+                    <hr>
+                    <strong>Linked Accounts</strong>
+                    <hr>
+                    <strong>Skills</strong>
+                    <hr>
+                    <strong>Education</strong>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-8">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 style="font-weight: bold">{{ profile.user.username }}'s Gig:</h4>
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                    {% if gigs.count < 1 %}
+                        <span class="text-center">{{ profile.user.username }} doesn't have any Gigs to display</span>
+                    {% endif %}
+                        {% for gig in gigs %}
+                            <div class="col-sm-3">
+                                <div class="thumbnail float-left">
+                                    <a href="{% url 'sixxer:gig-detail' gig.id %}"><img src="/media/{{ gig.photo }}"
+                                                                                        style="height:auto; width:100%;"></a>
+                                    <div class="caption">
+                                        <p><a href="{% url 'sixxer:gig-detail' gig.id %}">{{ gig.title }}</a>
+                                        </p>
+                                        <hr style="margin-bottom: 0px">
+                                        <span><b
+                                                class="green pull-right">${{ gig.price }}</b></span>
+                                        <br>
+                                    </div>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+{% endblock %}

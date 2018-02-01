@@ -1,20 +1,28 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth.decorators import login_required
 from django.urls import reverse
+from django.db.models import Count
 
 from .models import Gig, Profile
 from .forms import GigForm
 
 # Create your views here.
 
+BRAINTREE_MERCHANT = 'your_merchant_key'
+BRAINTREE_PUBLIC_KEY = 'your_public_key'
+BRAINTREE_PRIVATE_KEY = 'your_private_key'
+
+
 def home(request):
-	gigs = Gig.objects.filter(status=True)
+	gigs = Gig.objects.filter(status=True).order_by("-rating")
 	return render(request, "home.html", {"gigs": gigs})
 
 def gig_detail(request, id):
-	print("Called")
 	gig = Gig.objects.get(id=id)
-	return render(request, "gigs/gig_detail.html", {"gig": gig})
+	# client_token = braintree.ClientToken.generate()
+	client_token = "AAAA"
+	recommends = Gig.objects.filter(status=True)
+	return render(request, "gigs/gig_detail.html", {"gig": gig, "recommends": recommends, "client_token": client_token})
 
 @login_required(login_url="/")
 def create_gig(request):
@@ -51,14 +59,30 @@ def my_gigs(request):
 
 def my_profile(request, username):
 	profile = Profile.objects.get(user__username=username)
-	gigs = Gig.objects.filter(user=profile.user, status=True)
+	if request.user == profile.user:
+		gigs = Gig.objects.filter(user=profile.user)
+	else:
+		gigs = Gig.objects.filter(user=profile.user, status=True)
 
-	return render(request, "profile.html", {"profile": profile, "gigs": gigs})
+	return render(request, "profile_2.html", {"profile": profile, "gigs": gigs})
 
 
+@login_required(login_url="/")
+def create_purchase(request):
+	if request.method == "POST":
+		gig = Gig.objects.get(request.POST["gig_id"])
+		nonce = request.POST["payment_method_nonce"]
+		# result = braintree.Transaction.sale({
+		# 	"amount": gig.price,
+		# 	"payment_method_nonce": nonce
+		# })
+		#
+		# if result.is_success:
+		# 	print("Buy Success")
+		# else:
+		# 	print("Buy Failed")
 
-
-
+		return redirect("/")
 
 
 

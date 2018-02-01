@@ -2,7 +2,7 @@
 {% load static %}
 {% block page %}
 
-    <div class="row">
+    <div class="row" style="margin-top: 15px">
         <div class="col-lg-12">
             <img src="{% static 'img/banner.gif' %}" alt="" class="banner">
         </div>
@@ -10,10 +10,44 @@
         {% for gig in gigs %}
             <div class="col-md-3">
                 <div class="thumbnail">
-                    <a href="{% url 'sixxer:gig-detail' gig.id %}"><img src="/media/{{ gig.photo }}" style="height:auto; width:100%;"></a>
+                    <a href="{% url 'sixxer:gig-detail' gig.id %}"><img src="/media/{{ gig.photo }}"
+                                                                        style="height:auto; width:100%;"></a>
                     <div class="caption">
-                        <p><a href="{% url 'sixxer:gig-detail' gig.id %}">{{ gig.description }}</a></p>
-                        <b><span>by <a href="{% url 'sixxer:my-profile' gig.user.username %}">{{ gig.user.username }}</a></span><b class="green pull-right">${{ gig.price }}</b></b>
+                        <b><a href="{% url 'sixxer:gig-detail' gig.id %}">{{ gig.title }}</a></b>
+                        <b class="pull-right" style="color: darkgrey;"><p><i class="fa fa-heart" aria-hidden="true"></i>
+                        </p></b>
+                        <br>
+                        <br>
+                        {% if gig.rating == 0 %}
+                            <i class="fa fa-star-o" aria-hidden="true"></i><b style="color: gold;"></b>
+                            <small>(0)</small>
+                        {% else %}
+
+                            {% with ''|center:gig.rating as range %}
+                                {% for _ in range %}
+                                    <i class="fa fa-star" aria-hidden="true" style="color: gold;"></i>
+                                {% endfor %}
+                            {% endwith %}
+                            <b>{{ gig.rating }}.0 </b>
+                            <small>(420)</small>
+                        {% endif %}
+                        <hr style="margin-bottom: 3px">
+                        <div class="row">
+                            <div class="col-md-1">
+                                <img
+                                        src="{% if gig.user.profile %} {{ gig.user.profile.avatar }} {% else %} {% static 'img/avatar.png' %} {% endif %}"
+                                        alt="" class="img-circle" height="40" width="40">
+                            </div>
+                            <div class="col-md-6 col-sm-offset-1">
+                                <a
+                                        href="{% url 'sixxer:my-profile' gig.user.username %}">{{ gig.user.username }}</a>
+                                <br>
+                                <small>Level One Seller</small>
+                            </div>
+                            <div class="col-md-3">
+                                <b class="green pull-right"><p>${{ gig.price }}</p></b>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -21,3 +55,13 @@
     </div>
 
 {% endblock %}
+
+{#{% for gig in gigs %}#}
+{#    {% with ''|center:gig.rating as range %}#}
+{#        {% for _ in range %}#}
+{#            {{ forloop.counter }}#}
+{#        {% endfor %}#}
+{#    {% endwith %}#}
+{##}
+{#{% endfor %}#}
+

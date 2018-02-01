@@ -7,6 +7,7 @@
         <link rel="icon" type="image/ico" href="{% static 'img/favicon.ico' %}">
         <link rel="stylesheet" href="{% static 'css/bootstrap3.3.4.min.css' %}">
         <link rel="stylesheet" href="{% static 'css/custom.css' %}">
+        <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
     </head>
     <body>
         <nav class="navbar navbar-default navbar-fixed-top">
@@ -26,20 +27,26 @@
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
                                    aria-haspopup="true"
                                    aria-expanded="false">
-                                    <img src="{% if user.profile %} {{ user.profile.avatar }} {% else %} {% static 'img/avatar.png' %} {% endif %}" alt="" class="img-circle" height="22" width="22">
+                                    <img src="{% if user.profile %} {{ user.profile.avatar }} {% else %} {% static 'img/avatar.png' %} {% endif %}"
+                                         alt="" class="img-circle" height="22" width="22">
                                     {{ user.get_full_name|default:user.username }} <span class="caret"></span>
                                 </a>
                                 <ul class="dropdown-menu">
-{#                                    <li><a href="{% url 'sixxer:my-profile' user.username %}">My Account</a></li>#}
+                                    {#                                    <li><a href="{% url 'sixxer:my-profile' user.username %}">My Account</a></li>#}
                                     <li><a href="{% url 'sixxer:gig-create' %}">Create a Gig</a></li>
                                     <li><a href="{% url 'sixxer:my-gigs' %}">My Gigs</a></li>
-                                    <li role="separator"></li>
+                                    <li role="presentation" class="divider"></li>
+                                    <li><a href="{% url 'sixxer:my-profile' user.username %}">My Account</a></li>
                                     <li><a href="{% url 'logout' %}?next={{ request.path }}">Logout</a></li>
                                 </ul>
                             </li>
                         {% else %}
                             <li>
-                                <a href="{% url 'social:begin' 'facebook' %}?next={{ request.path }}">Login with Facebook</a>
+                                <a href="{% url 'social:begin' 'facebook' %}?next={{ request.path }}">Login with
+                                                                                                      Facebook</a>
+                            </li>
+                            <li>
+{#                                <a href="{% url 'login' %}?next={{ request.path }}">Login</a>#}
                             </li>
                         {% endif %}
                     </ul>
@@ -68,6 +75,9 @@
 
         <footer id="footer">
             <div class="container">
+                {% block footer %}
+
+                {% endblock %}
                 <span>Sixxer App &copy; 2018</span>
             </div>
         </footer>

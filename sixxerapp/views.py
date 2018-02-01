@@ -22,12 +22,12 @@ category = {
 
 def home(request):
 	try:
-		gigs = Gig.objects.filter(category=category[request.GET["c"]])
-	except:
-		gigs = Gig.objects.filter(status=True).order_by("-rating")
-
-	try:
-		gigs = Gig.objects.filter(title__contains=request.GET["s"])
+		if request.GET["c"]:
+			gigs = Gig.objects.filter(category=category[request.GET["c"]])
+		elif request.GET["s"]:
+			gigs = Gig.objects.filter(title__contains=request.GET["s"])
+		else:
+			gigs = Gig.objects.filter(status=True).order_by("-rating")
 	except:
 		gigs = Gig.objects.filter(status=True).order_by("-rating")
 

@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="227ec69a-56e4-4793-a43c-44092a3b835b" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,11 +25,11 @@
     <expand>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="db2 [2]" type="feb32156:DbDataSourceImpl" />
+        <item name="db2" type="feb32156:DbDataSourceImpl" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="db2 [2]" type="feb32156:DbDataSourceImpl" />
+        <item name="db2" type="feb32156:DbDataSourceImpl" />
         <item name="#1: schema" type="92ea39e5:Db2ImplModel$Schema" />
       </path>
     </expand>
@@ -71,7 +73,7 @@
       <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sixxerapp/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="302">
+            <state relative-caret-position="359">
               <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
@@ -80,25 +82,25 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="sixxerapp_gig" pinned="false" current-in-tab="false">
+        <entry file="das://table:/124d702f/74de68e1-7f43-4fb1-aeda-e09cfcccdbcd/sixxerapp_gig">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sixxerapp/templates/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
-              <caret line="30" column="28" lean-forward="false" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="54" />
+            <state relative-caret-position="180">
+              <caret line="9" column="29" lean-forward="false" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
               <folding>
                 <element signature="n#style#0;n#b#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#b#2;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#i#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sixxerapp_gig" pinned="false" current-in-tab="false">
-        <entry file="das://table:/124d702f/41b17ed6-3668-4174-917e-82c9fcec5944/sixxerapp_gig">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
             </state>
           </provider>
         </entry>
@@ -123,7 +125,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gig_detail.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="gig_detail.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sixxerapp/templates/gigs/gig_detail.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="540">
@@ -150,8 +152,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="auth_user" pinned="false" current-in-tab="false">
-        <entry file="das://table:/124d702f/01cc9ced-16ac-46df-b57c-0ef915a555ab/auth_user">
+      <file leaf-file-name="sixxerapp_gig" pinned="false" current-in-tab="false">
+        <entry file="das://table:/124d702f/5ec732bb-0970-4631-bb71-6c4e8bbb33e6/sixxerapp_gig">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sixxerapp_gig" pinned="false" current-in-tab="true">
+        <entry file="das://table:/124d702f/a5b0b16e-fb1e-4069-8013-3ea7bd5c26dc/sixxerapp_gig">
           <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
             <state>
               <filtering enabled="true" />
@@ -206,10 +217,10 @@
         <option value="$PROJECT_DIR$/sixxerapp/urls.py" />
         <option value="$PROJECT_DIR$/sixxerapp/static/js/braintree.js" />
         <option value="$PROJECT_DIR$/sixxerapp/templates/modules/base.html" />
-        <option value="$PROJECT_DIR$/sixxerapp/templates/home.html" />
         <option value="$PROJECT_DIR$/sixxerapp/views.py" />
         <option value="$PROJECT_DIR$/sixxerapp/models.py" />
         <option value="$PROJECT_DIR$/sixxerapp/templates/gigs/gig_detail.html" />
+        <option value="$PROJECT_DIR$/sixxerapp/templates/home.html" />
       </list>
     </option>
   </component>
@@ -388,13 +399,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1426" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29392973" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2202052" sideWeight="0.50397456" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25019732" sideWeight="0.49841017" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2202052" sideWeight="0.49602544" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20520915" sideWeight="0.49523053" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20520915" sideWeight="0.49523053" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13235295" sideWeight="0.4972889" order="0" side_tool="false" content_ui="combo" x="1127" y="59" width="305" height="1291" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11486486" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -425,42 +437,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/sixxerapp/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="9" column="44" lean-forward="false" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sixxerapp/templates/gigs/gig_detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2520">
-          <caret line="84" column="88" lean-forward="false" selection-start-line="84" selection-start-column="88" selection-end-line="84" selection-end-column="88" />
-          <folding>
-            <element signature="e#260#305#0#HTML" expanded="true" />
-            <element signature="e#481#501#0#HTML" expanded="true" />
-            <element signature="e#768#788#0#HTML" expanded="true" />
-            <element signature="e#1229#1254#0#HTML" expanded="true" />
-            <element signature="e#1545#1570#0#HTML" expanded="true" />
-            <element signature="e#1750#1770#0#HTML" expanded="true" />
-            <element signature="e#6729#6749#0#HTML" expanded="true" />
-            <element signature="e#6966#6986#0#HTML" expanded="true" />
-            <element signature="e#7738#7763#0#HTML" expanded="true" />
-            <element signature="e#7900#7945#0#HTML" expanded="true" />
-            <element signature="e#7996#8042#0#HTML" expanded="true" />
-            <element signature="e#8371#8403#0#HTML" expanded="true" />
-            <element signature="e#8607#8631#0#HTML" expanded="true" />
-            <element signature="e#9011#9031#0#HTML" expanded="true" />
-            <element signature="e#9330#9350#0#HTML" expanded="true" />
-            <element signature="e#9568#9594#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/124d702f/eae6c4f6-7f39-440f-95a4-4a7ef21ca6e4/main.auth_user" />
     <entry file="das://table:/124d702f/eae6c4f6-7f39-440f-95a4-4a7ef21ca6e4/main.sixxerapp_profile" />
     <entry file="file://$PROJECT_DIR$/sixxerapp/templates/profile.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -734,13 +710,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://table:/124d702f/41b17ed6-3668-4174-917e-82c9fcec5944/sixxerapp_rating">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://table:/124d702f/41b17ed6-3668-4174-917e-82c9fcec5944/sixxerapp_gig">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -758,16 +727,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sixxerapp/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sixxerapp/templates/modules/base.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="692">
@@ -778,15 +737,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sixxerapp/templates/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="30" column="28" lean-forward="false" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="54" />
-          <folding>
-            <element signature="n#style#0;n#b#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#b#2;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-          </folding>
+    <entry file="das://table:/124d702f/41b17ed6-3668-4174-917e-82c9fcec5944/sixxerapp_rating">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
@@ -812,6 +766,49 @@
             <element signature="e#9330#9350#0#HTML" expanded="true" />
             <element signature="e#9568#9594#0#HTML" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/124d702f/5ec732bb-0970-4631-bb71-6c4e8bbb33e6/sixxerapp_gig">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/124d702f/74de68e1-7f43-4fb1-aeda-e09cfcccdbcd/sixxerapp_gig">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sixxerapp/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sixxerapp/templates/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" column="29" lean-forward="false" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
+          <folding>
+            <element signature="n#style#0;n#b#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#b#2;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/124d702f/a5b0b16e-fb1e-4069-8013-3ea7bd5c26dc/sixxerapp_gig">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>

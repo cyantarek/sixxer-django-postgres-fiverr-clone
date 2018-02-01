@@ -34,6 +34,7 @@ class Gig(models.Model):
 	status = models.BooleanField(default=True)
 	created_at = models.DateTimeField(auto_now_add=True)
 	rating = models.IntegerField(default=0)
+	slug = models.SlugField(unique=True)
 
 	def __str__(self):
 		return self.title

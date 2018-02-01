@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect
 from django.contrib.auth.decorators import login_required
 from django.urls import reverse
 from django.db.models import Count
+from django.utils.text import slugify
 
 from .models import Gig, Profile
 from .forms import GigForm
@@ -17,8 +18,8 @@ def home(request):
 	gigs = Gig.objects.filter(status=True).order_by("-rating")
 	return render(request, "home.html", {"gigs": gigs})
 
-def gig_detail(request, id):
-	gig = Gig.objects.get(id=id)
+def gig_detail(request, slug):
+	gig = Gig.objects.get(slug=slug)
 	# client_token = braintree.ClientToken.generate()
 	client_token = "AAAA"
 	recommends = Gig.objects.filter(status=True)
@@ -32,6 +33,7 @@ def create_gig(request):
 		if gig_form.is_valid():
 			gig = gig_form.save(commit=False)
 			gig.user = request.user
+			gig.slug = slugify(gig_form.cleaned_data.get("title"))
 			gig.save()
 			return redirect("/mygigs/")
 		else:
@@ -40,9 +42,9 @@ def create_gig(request):
 	return render(request, "gigs/create_gig.html", {"gig_form": gig_form, "error": error})
 
 @login_required(login_url="/")
-def edit_gig(request, id):
+def edit_gig(request, slug):
 	error = None
-	gig = Gig.objects.get(id=id, user=request.user)
+	gig = Gig.objects.get(slug=slug, user=request.user)
 	if request.method == "POST":
 		gig_form = GigForm(request.POST, request.FILES, instance=gig)
 		if gig_form.is_valid():

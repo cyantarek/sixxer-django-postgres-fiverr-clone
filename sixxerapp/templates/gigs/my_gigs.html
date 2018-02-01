@@ -19,7 +19,7 @@
                 {% for gig in gigs %}
                     <tr>
                         <td>{{ forloop.counter }}</td>
-                        <td><a href="{% url 'sixxer:gig-detail' gig.id %}">{{ gig.title }}</a></td>
+                        <td><a href="{% url 'sixxer:gig-detail' gig.slug%}">{{ gig.title }}</a></td>
                         <td>${{ gig.price }}</td>
                         <td>0</td>
                         {% if gig.status %}

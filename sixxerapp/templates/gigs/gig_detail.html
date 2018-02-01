@@ -83,7 +83,7 @@
         <div class="col-md-4">
             <div class="panel panel-default">
                 <div class="panel-body">
-                    {% ifequal gig.user user %}<a href="{% url 'sixxer:gig-edit' gig.id %}">
+                    {% ifequal gig.user user %}<a href="{% url 'sixxer:gig-edit' gig.slug %}">
                         <button type="button" class="btn btn-primary btn-block">
                             Edit Gig
                         </button>
@@ -95,7 +95,7 @@
                             <form action="/checkout/" method="post">
                                 {% csrf_token %}
                                 <div id="payment-form"></div>
-                                <input name="gig_id" value="{{ gig.id }}" hidden>
+                                <input name="gig_id" value="{{ gig.slug }}" hidden>
                                 <button type="submit" class="btn btn-success btn-block" href="#">
                                     Order Now (${{ gig.price }})
                                 </button>
@@ -169,10 +169,10 @@
             {% for gig in recommends %}
                 <div class="col-md-3">
                     <div class="thumbnail">
-                        <a href="{% url 'sixxer:gig-detail' gig.id %}"><img src="/media/{{ gig.photo }}"
+                        <a href="{% url 'sixxer:gig-detail' gig.slug %}"><img src="/media/{{ gig.photo }}"
                                                                             style="height:auto; width:100%;"></a>
                         <div class="caption">
-                            <b><a href="{% url 'sixxer:gig-detail' gig.id %}">{{ gig.title }}</a></b>
+                            <b><a href="{% url 'sixxer:gig-detail' gig.slug %}">{{ gig.title }}</a></b>
                             <b class="pull-right" style="color: darkgrey;"><p><i class="fa fa-heart"
                                                                                  aria-hidden="true"></i>
                             </p></b>

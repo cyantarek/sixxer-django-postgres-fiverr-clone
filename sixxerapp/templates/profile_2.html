@@ -53,10 +53,10 @@
                         {% for gig in gigs %}
                             <div class="col-sm-3">
                                 <div class="thumbnail float-left">
-                                    <a href="{% url 'sixxer:gig-detail' gig.id %}"><img src="/media/{{ gig.photo }}"
+                                    <a href="{% url 'sixxer:gig-detail' gig.slug %}"><img src="/media/{{ gig.photo }}"
                                                                                         style="height:auto; width:100%;"></a>
                                     <div class="caption">
-                                        <p><a href="{% url 'sixxer:gig-detail' gig.id %}">{{ gig.title }}</a>
+                                        <p><a href="{% url 'sixxer:gig-detail' gig.slug %}">{{ gig.title }}</a>
                                         </p>
                                         <hr style="margin-bottom: 0px">
                                         <span><b

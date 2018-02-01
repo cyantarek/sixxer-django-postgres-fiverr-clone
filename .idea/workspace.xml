@@ -2,28 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="227ec69a-56e4-4793-a43c-44092a3b835b" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/sixxerapp/static/css/fiverr.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sixxerapp/static/css/font-awesome.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sixxerapp/static/fonts/Chunkfive.otf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sixxerapp/static/fonts/fontawesome-webfont.woff2" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sixxerapp/static/js/braintree.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sixxerapp/templates/profile_2.html" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/01cc9ced-16ac-46df-b57c-0ef915a555ab.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/01cc9ced-16ac-46df-b57c-0ef915a555ab.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/eae6c4f6-7f39-440f-95a4-4a7ef21ca6e4.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Sixxer/settings.py" afterPath="$PROJECT_DIR$/Sixxer/settings.py" />
-      <change beforePath="$PROJECT_DIR$/db2.sqlite3" afterPath="$PROJECT_DIR$/db2.sqlite3" />
-      <change beforePath="$PROJECT_DIR$/sixxerapp/models.py" afterPath="$PROJECT_DIR$/sixxerapp/models.py" />
-      <change beforePath="$PROJECT_DIR$/sixxerapp/static/css/custom.css" afterPath="$PROJECT_DIR$/sixxerapp/static/css/custom.css" />
-      <change beforePath="$PROJECT_DIR$/sixxerapp/templates/gigs/create_gig.html" afterPath="$PROJECT_DIR$/sixxerapp/templates/gigs/create_gig.html" />
-      <change beforePath="$PROJECT_DIR$/sixxerapp/templates/gigs/edit_gig.html" afterPath="$PROJECT_DIR$/sixxerapp/templates/gigs/edit_gig.html" />
       <change beforePath="$PROJECT_DIR$/sixxerapp/templates/gigs/gig_detail.html" afterPath="$PROJECT_DIR$/sixxerapp/templates/gigs/gig_detail.html" />
-      <change beforePath="$PROJECT_DIR$/sixxerapp/templates/gigs/my_gigs.html" afterPath="$PROJECT_DIR$/sixxerapp/templates/gigs/my_gigs.html" />
-      <change beforePath="$PROJECT_DIR$/sixxerapp/templates/home.html" afterPath="$PROJECT_DIR$/sixxerapp/templates/home.html" />
-      <change beforePath="$PROJECT_DIR$/sixxerapp/templates/modules/base.html" afterPath="$PROJECT_DIR$/sixxerapp/templates/modules/base.html" />
-      <change beforePath="$PROJECT_DIR$/sixxerapp/urls.py" afterPath="$PROJECT_DIR$/sixxerapp/urls.py" />
-      <change beforePath="$PROJECT_DIR$/sixxerapp/views.py" afterPath="$PROJECT_DIR$/sixxerapp/views.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -81,7 +60,7 @@
         <entry file="file://$PROJECT_DIR$/sixxerapp/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="390">
-              <caret line="16" column="62" lean-forward="true" selection-start-line="16" selection-start-column="62" selection-end-line="16" selection-end-column="62" />
+              <caret line="16" column="62" lean-forward="false" selection-start-line="16" selection-start-column="62" selection-end-line="16" selection-end-column="62" />
               <folding>
                 <element signature="e#0#45#0" expanded="true" />
               </folding>
@@ -93,7 +72,7 @@
         <entry file="file://$PROJECT_DIR$/sixxerapp/models.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="302">
-              <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+              <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -147,25 +126,25 @@
       <file leaf-file-name="gig_detail.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sixxerapp/templates/gigs/gig_detail.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="40" column="46" lean-forward="false" selection-start-line="40" selection-start-column="46" selection-end-line="40" selection-end-column="46" />
+            <state relative-caret-position="540">
+              <caret line="36" column="50" lean-forward="false" selection-start-line="36" selection-start-column="50" selection-end-line="36" selection-end-column="50" />
               <folding>
                 <element signature="e#260#305#0#HTML" expanded="true" />
                 <element signature="e#481#501#0#HTML" expanded="true" />
                 <element signature="e#768#788#0#HTML" expanded="true" />
                 <element signature="e#1229#1254#0#HTML" expanded="true" />
                 <element signature="e#1545#1570#0#HTML" expanded="true" />
-                <element signature="e#1752#1772#0#HTML" expanded="true" />
-                <element signature="e#6731#6751#0#HTML" expanded="true" />
-                <element signature="e#6968#6988#0#HTML" expanded="true" />
-                <element signature="e#7740#7765#0#HTML" expanded="true" />
-                <element signature="e#7902#7947#0#HTML" expanded="true" />
-                <element signature="e#7998#8044#0#HTML" expanded="true" />
-                <element signature="e#8373#8405#0#HTML" expanded="true" />
-                <element signature="e#8609#8633#0#HTML" expanded="true" />
-                <element signature="e#9013#9033#0#HTML" expanded="true" />
-                <element signature="e#9332#9352#0#HTML" expanded="true" />
-                <element signature="e#9570#9596#0#HTML" expanded="true" />
+                <element signature="e#1750#1770#0#HTML" expanded="true" />
+                <element signature="e#6729#6749#0#HTML" expanded="true" />
+                <element signature="e#6966#6986#0#HTML" expanded="true" />
+                <element signature="e#7738#7763#0#HTML" expanded="true" />
+                <element signature="e#7900#7945#0#HTML" expanded="true" />
+                <element signature="e#7996#8042#0#HTML" expanded="true" />
+                <element signature="e#8371#8403#0#HTML" expanded="true" />
+                <element signature="e#8607#8631#0#HTML" expanded="true" />
+                <element signature="e#9011#9031#0#HTML" expanded="true" />
+                <element signature="e#9330#9350#0#HTML" expanded="true" />
+                <element signature="e#9568#9594#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -409,14 +388,15 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1426" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29392973" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2202052" sideWeight="0.50397456" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25019732" sideWeight="0.49841017" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25019732" sideWeight="0.49841017" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2202052" sideWeight="0.49602544" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20520915" sideWeight="0.49523053" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13235295" sideWeight="0.4972889" order="0" side_tool="false" content_ui="combo" x="1127" y="59" width="305" height="1291" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20520915" sideWeight="0.49523053" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13235295" sideWeight="0.4972889" order="0" side_tool="false" content_ui="combo" x="1127" y="59" width="305" height="1291" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11486486" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -466,17 +446,17 @@
             <element signature="e#768#788#0#HTML" expanded="true" />
             <element signature="e#1229#1254#0#HTML" expanded="true" />
             <element signature="e#1545#1570#0#HTML" expanded="true" />
-            <element signature="e#1752#1772#0#HTML" expanded="true" />
-            <element signature="e#6731#6751#0#HTML" expanded="true" />
-            <element signature="e#6968#6988#0#HTML" expanded="true" />
-            <element signature="e#7740#7765#0#HTML" expanded="true" />
-            <element signature="e#7902#7947#0#HTML" expanded="true" />
-            <element signature="e#7998#8044#0#HTML" expanded="true" />
-            <element signature="e#8373#8405#0#HTML" expanded="true" />
-            <element signature="e#8609#8633#0#HTML" expanded="true" />
-            <element signature="e#9013#9033#0#HTML" expanded="true" />
-            <element signature="e#9332#9352#0#HTML" expanded="true" />
-            <element signature="e#9570#9596#0#HTML" expanded="true" />
+            <element signature="e#1750#1770#0#HTML" expanded="true" />
+            <element signature="e#6729#6749#0#HTML" expanded="true" />
+            <element signature="e#6966#6986#0#HTML" expanded="true" />
+            <element signature="e#7738#7763#0#HTML" expanded="true" />
+            <element signature="e#7900#7945#0#HTML" expanded="true" />
+            <element signature="e#7996#8042#0#HTML" expanded="true" />
+            <element signature="e#8371#8403#0#HTML" expanded="true" />
+            <element signature="e#8607#8631#0#HTML" expanded="true" />
+            <element signature="e#9011#9031#0#HTML" expanded="true" />
+            <element signature="e#9330#9350#0#HTML" expanded="true" />
+            <element signature="e#9568#9594#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -772,7 +752,7 @@
     <entry file="file://$PROJECT_DIR$/sixxerapp/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
-          <caret line="16" column="62" lean-forward="true" selection-start-line="16" selection-start-column="62" selection-end-line="16" selection-end-column="62" />
+          <caret line="16" column="62" lean-forward="false" selection-start-line="16" selection-start-column="62" selection-end-line="16" selection-end-column="62" />
           <folding>
             <element signature="e#0#45#0" expanded="true" />
           </folding>
@@ -782,7 +762,7 @@
     <entry file="file://$PROJECT_DIR$/sixxerapp/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="302">
-          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
@@ -813,25 +793,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sixxerapp/templates/gigs/gig_detail.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="40" column="46" lean-forward="false" selection-start-line="40" selection-start-column="46" selection-end-line="40" selection-end-column="46" />
+        <state relative-caret-position="540">
+          <caret line="36" column="50" lean-forward="false" selection-start-line="36" selection-start-column="50" selection-end-line="36" selection-end-column="50" />
           <folding>
             <element signature="e#260#305#0#HTML" expanded="true" />
             <element signature="e#481#501#0#HTML" expanded="true" />
             <element signature="e#768#788#0#HTML" expanded="true" />
             <element signature="e#1229#1254#0#HTML" expanded="true" />
             <element signature="e#1545#1570#0#HTML" expanded="true" />
-            <element signature="e#1752#1772#0#HTML" expanded="true" />
-            <element signature="e#6731#6751#0#HTML" expanded="true" />
-            <element signature="e#6968#6988#0#HTML" expanded="true" />
-            <element signature="e#7740#7765#0#HTML" expanded="true" />
-            <element signature="e#7902#7947#0#HTML" expanded="true" />
-            <element signature="e#7998#8044#0#HTML" expanded="true" />
-            <element signature="e#8373#8405#0#HTML" expanded="true" />
-            <element signature="e#8609#8633#0#HTML" expanded="true" />
-            <element signature="e#9013#9033#0#HTML" expanded="true" />
-            <element signature="e#9332#9352#0#HTML" expanded="true" />
-            <element signature="e#9570#9596#0#HTML" expanded="true" />
+            <element signature="e#1750#1770#0#HTML" expanded="true" />
+            <element signature="e#6729#6749#0#HTML" expanded="true" />
+            <element signature="e#6966#6986#0#HTML" expanded="true" />
+            <element signature="e#7738#7763#0#HTML" expanded="true" />
+            <element signature="e#7900#7945#0#HTML" expanded="true" />
+            <element signature="e#7996#8042#0#HTML" expanded="true" />
+            <element signature="e#8371#8403#0#HTML" expanded="true" />
+            <element signature="e#8607#8631#0#HTML" expanded="true" />
+            <element signature="e#9011#9031#0#HTML" expanded="true" />
+            <element signature="e#9330#9350#0#HTML" expanded="true" />
+            <element signature="e#9568#9594#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>

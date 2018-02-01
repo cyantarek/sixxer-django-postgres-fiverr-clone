@@ -1,7 +1,5 @@
 # Created by .ignore support plugin (hsz.mobi)
 
 __pycache__/
-db.sqlite3
-db2.sqlite3
 *.pyc
 migrations/

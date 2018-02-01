@@ -14,11 +14,16 @@
             <div class="navbar-inverse">
                 <div class="container">
                     <div class="navbar-header">
-                        <a class="navbar-brand" href="/"><img src="{% static 'img/logo.png' %}" alt="" height="23"></a>
+                        <a class="navbar-brand" href="/"><img src="{% static 'img/sixxerr_logo.png' %}" alt="" height="25"></a>
                     </div>
-                    <form action="#" class="navbar-form navbar-left" role="search">
+                    <form action="." class="navbar-form navbar-left" method="get">
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Find services">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Find services" name="s">
+                                <span class="input-group-btn">
+                                <button class="btn btn-success">Find</button>
+                            </span>
+                            </div>
                         </div>
                     </form>
                     <ul class="nav navbar-nav navbar-right">
@@ -35,15 +40,17 @@
                                     {#                                    <li><a href="{% url 'sixxer:my-profile' user.username %}">My Account</a></li>#}
                                     <li><a href="{% url 'sixxer:gig-create' %}">Create a Gig</a></li>
                                     <li><a href="{% url 'sixxer:my-gigs' %}">My Gigs</a></li>
+                                    <li><a href="{% url 'sixxer:my-buyings' %}">My Buyings</a></li>
+                                    <li><a href="{% url 'sixxer:my-sellings' %}">My Sellings</a></li>
                                     <li role="presentation" class="divider"></li>
-                                    <li><a href="{% url 'sixxer:my-profile' user.username %}">My Account</a></li>
+                                    <li><a href="{% url 'sixxer:my-profile' user.username %}">My Profile</a></li>
                                     <li><a href="{% url 'logout' %}?next={{ request.path }}">Logout</a></li>
                                 </ul>
                             </li>
                         {% else %}
                             <li>
                                 <a href="{% url 'social:begin' 'facebook' %}?next={{ request.path }}">Login with
-                                                                                                      Facebook</a>
+                                                                                                      <i class="fa fa-facebook-square" style="color: cornflowerblue;"></i></a>
                             </li>
                             <li>
 {#                                <a href="{% url 'login' %}?next={{ request.path }}">Login</a>#}
@@ -55,18 +62,21 @@
             <div id="category">
                 <div class="container">
                     <ul class="nav navbar-nav">
-                        <li><a href="#">Graphics & Design</a></li>
-                        <li><a href="#">Digital Marketing</a></li>
-                        <li><a href="#">Video & Animation</a></li>
-                        <li><a href="#">Web Development</a></li>
-                        <li><a href="#">Programming & Tech</a></li>
+                        <li><a href="/?c=graphics-design">Graphics & Design</a></li>
+                        <li><a href="/?c=digital-marketing">Digital Marketing</a></li>
+                        <li><a href="/?c=video-animation">Video & Animation</a></li>
+                        <li><a href="/?c=web-development">Web Development</a></li>
+                        <li><a href="/?c=programming-tech">Programming & Tech</a></li>
+                        <li><a href="#">Business</a></li>
+                        <li><a href="#">Fun & Lifestyle</a></li>
+                        <li><a href="#">Article Writing</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
 
         <div id="body">
-            <div class="container">
+            <div class="container" style="height: auto;">
                 {% block page %}
 
                 {% endblock %}
@@ -78,7 +88,7 @@
                 {% block footer %}
 
                 {% endblock %}
-                <span>Sixxer App &copy; 2018</span>
+                <span>Sixxer App &copy; 2018 - Developed by <a href="http://www.facebook.com/tarekbinhedayat">Cyan Tarek</a></span>
             </div>
         </footer>
         <script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>

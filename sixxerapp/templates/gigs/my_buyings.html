@@ -1,0 +1,31 @@
+{% extends 'modules/base.html' %}
+{% load static %}
+
+{% block page %}
+    <h1 style="margin-bottom: 30px">My Buyings</h1>
+    <div class="panel panel-default">
+        <table class="table table-bordered table-striped">
+            <thead class="bg-success">
+                <tr>
+                    <th width="5%">SL.</th>
+                    <th>Gig Title</th>
+                    <th width="10%">Price</th>
+                    <th width="10%">Buyer</th>
+                    <th width="10%">Status</th>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for purchase in purchases %}
+                    <tr>
+                        <td>{{ forloop.counter }}</td>
+                        <td><a href="{% url 'sixxer:gig-detail' purchase.gig.slug %}">{{ purchase.gig.title }}</a></td>
+                        <td>${{ purchase.gig.price }}</td>
+                        <td><a href="{% url 'sixxer:my-profile' purchase.gig.user.username %}">{{ purchase.gig.user.username }}</a></td>
+                        <td>{{ purchase.get_status_display }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+{% endblock %}

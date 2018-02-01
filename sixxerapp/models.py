@@ -38,3 +38,43 @@ class Gig(models.Model):
 
 	def __str__(self):
 		return self.title
+
+PURCHASE_CHOICES = (
+	("1", "In Progress"),
+	("2", "Completed"),
+	("3", "Cancelled"),
+	("4", "Incomplete"),
+)
+
+class Purchase(models.Model):
+	gig = models.ForeignKey(Gig, on_delete=models.CASCADE)
+	buyer = models.ForeignKey(User, on_delete=models.CASCADE)
+	time = models.DateTimeField(auto_now_add=True)
+	status = models.CharField(choices=PURCHASE_CHOICES, max_length=1, default=1)
+
+	def __str__(self):
+		return self.gig.title
+
+
+class Review(models.Model):
+	user = models.ForeignKey(User, on_delete=models.CASCADE)
+	gig = models.ForeignKey(Gig, on_delete=models.CASCADE)
+	content = models.CharField(max_length=500)
+
+	def __str__(self):
+		return self.content
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

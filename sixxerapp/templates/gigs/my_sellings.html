@@ -1,0 +1,31 @@
+{% extends 'modules/base.html' %}
+{% load static %}
+
+{% block page %}
+    <h1 style="margin-bottom: 30px">My Sellings</h1>
+    <div class="panel panel-default">
+        <table class="table table-bordered table-striped">
+            <thead class="bg-success">
+                <tr>
+                    <th width="5%">SL.</th>
+                    <th>Gig Title</th>
+                    <th width="10%">Price</th>
+                    <th width="10%">Buyer</th>
+                    <th width="10%">Status</th>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for selling in sellings %}
+                    <tr>
+                        <td>{{ forloop.counter }}</td>
+                        <td><a href="{% url 'sixxer:gig-detail' selling.gig.slug %}">{{ selling.gig.title }}</a></td>
+                        <td>${{ selling.gig.price }}</td>
+                        <td><a href="{% url 'sixxer:my-profile' selling.buyer.username %}">{{ selling.buyer.username }}</a></td>
+                        <td>{{ selling.get_status_display }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+{% endblock %}

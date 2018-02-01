@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="227ec69a-56e4-4793-a43c-44092a3b835b" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -82,15 +80,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sixxerapp_gig" pinned="false" current-in-tab="false">
-        <entry file="das://table:/124d702f/74de68e1-7f43-4fb1-aeda-e09cfcccdbcd/sixxerapp_gig">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sixxerapp/templates/home.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -161,8 +150,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sixxerapp_gig" pinned="false" current-in-tab="true">
+      <file leaf-file-name="sixxerapp_gig" pinned="false" current-in-tab="false">
         <entry file="das://table:/124d702f/a5b0b16e-fb1e-4069-8013-3ea7bd5c26dc/sixxerapp_gig">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sixxerapp_profile" pinned="false" current-in-tab="true">
+        <entry file="das://table:/124d702f/a5b0b16e-fb1e-4069-8013-3ea7bd5c26dc/sixxerapp_profile">
           <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
             <state>
               <filtering enabled="true" />
@@ -437,7 +435,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="das://table:/124d702f/eae6c4f6-7f39-440f-95a4-4a7ef21ca6e4/main.sixxerapp_profile" />
     <entry file="file://$PROJECT_DIR$/sixxerapp/templates/profile.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -806,6 +803,13 @@
       </provider>
     </entry>
     <entry file="das://table:/124d702f/a5b0b16e-fb1e-4069-8013-3ea7bd5c26dc/sixxerapp_gig">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/124d702f/a5b0b16e-fb1e-4069-8013-3ea7bd5c26dc/sixxerapp_profile">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
